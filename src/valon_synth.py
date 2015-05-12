@@ -285,10 +285,10 @@ class Synthesizer:
         return ack == ACK
 
     def set_rf_level_a(self,rf_level):
-        return set_rf_level(SYNTH_A,rf_level)
+        return self.set_rf_level(SYNTH_A,rf_level)
 
     def set_rf_level_b(self,rf_level):
-        return set_rf_level(SYNTH_B,rf_level)
+        return self.set_rf_level(SYNTH_B,rf_level)
         
     def get_options(self, synth):
         """
